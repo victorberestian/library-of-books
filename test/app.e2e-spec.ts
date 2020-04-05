@@ -240,7 +240,7 @@ describe('AuthorsController (e2e)', () => {
             const author = plainToClass(Author, {
                 firstName: 'Victor',
                 lastName: 'Berestian',
-                birthdate: '1981-06-14',
+                birthday: '1981-06-14',
             });
 
             await authorRepo.save(author);
@@ -277,7 +277,7 @@ describe('AuthorsController (e2e)', () => {
             const author = plainToClass(Author, {
                 firstName: 'Victor',
                 lastName: 'Dummy',
-                birthdate: new Date('1961-03-01'),
+                birthday: new Date('1961-03-01'),
             });
 
             await authorRepo.save(author);
@@ -318,7 +318,7 @@ describe('AuthorsController (e2e)', () => {
             const author = plainToClass(Author, {
                 firstName: 'Victor',
                 lastName: 'Dummy',
-                birthdate: new Date('1971-01-01'),
+                birthday: new Date('1971-01-01'),
             });
 
             await authorRepo.save(author);
